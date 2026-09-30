@@ -18,9 +18,14 @@ This dashboard helps bank management to:
 
 ## 📸 Dashboard Preview
 
-![Dashboard Overview](images/dashboard.png)
+### 📊 Executive Overview
+![Executive Overview](images/Executive%20Overview.png)
 
-![Churn Analysis](images/churn.png)
+### 🗺️ Customer Churn by Geography
+![Customer Churn by Geography](images/Customer%20Churn%20by%20Geography.png)
+
+### 📈 More Details
+![More Details](images/More%20Details.png)
 
 ---
 
