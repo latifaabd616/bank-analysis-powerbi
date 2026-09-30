@@ -16,6 +16,14 @@ This dashboard helps bank management to:
 
 ---
 
+## 📸 Dashboard Preview
+
+![Dashboard Overview](images/dashboard.png)
+
+![Churn Analysis](images/churn.png)
+
+---
+
 ## 📊 Key Performance Indicators (KPIs)
 
 The top section of the dashboard displays the following metrics:
