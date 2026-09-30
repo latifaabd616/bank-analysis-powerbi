@@ -1,74 +1,79 @@
-#  Customer Churn & Account Activity Analysis
+# Customer Churn & Account Activity Analysis
 
+## 📖 Overview
 
+An interactive **Power BI** dashboard for analyzing bank customer data, with a focus on:
 
+- **Customer Churn Rate** and its geographic distribution.
+- **Active vs. Inactive Accounts** analysis.
+- **Customer distribution by gender and age group**.
 
-## 📖 نظرة عامة (Overview)
+This dashboard helps bank management to:
 
-لوحة تحكم تفاعلية باستخدام **Power BI** لتحليل بيانات عملاء البنك، مع التركيز على:
-- **نسبة إلغاء الحسابات (Churn Rate)** وتوزيعها الجغرافي.
-- **تحليل الحسابات النشطة مقابل غير النشطة**.
-- **توزيع العملاء حسب الجنس والفئة العمرية**.
-
-تُساعد لوحة التحكم إدارة البنك على:
-- تحديد المناطق التي تعاني من ارتفاع نسبة إلغاء الحسابات.
-- فهم خصائص العملاء المترددين في الاستمرار.
-- تطوير استراتيجيات احتفاظ بالعملاء تستهدف الفئات الأكثر عرضة للتسرب.
-
-## 📊 مؤشرات الأداء الرئيسية (KPIs)
-
-يعرض الجزء العلوي من لوحة التحكم المؤشرات التالية:
-
-| المقياس | القيمة | الشرح |
-
-| **إجمالي العملاء** | 10k| عدد العملاء المسجلين في البنك. |
-| **الحسابات النشطة** | 5.2k| العملاء الذين لديهم حركة في حساباتهم خلال آخر 3 أشهر. |
-| **الحسابات غير النشطة** | [4.8k | العملاء الذين لم يقوموا بأي عملية خلال آخر 3 أشهر. |
-| ** إلغاء الحسابات** | 2037 | العملاء الذين ألغوا حساباتهم خلال الفترة المحددة. |
-| **نسبة الإناث**| 55% | نسبة العملاء الإناث. |
-| **نسبة الذكور** | 44% | نسبة العملاء الذكور. |
-| **متوسط العمر** | 38.92 | متوسط أعمار العملاء. |
-
-
-
-## 🗺️ الخريطة الجغرافية: نسبة إلغاء الحسابات حسب المنطقة
-
-تعرض هذه الخريطة **توزيع نسبة إلغاء الحسابات (Churn Rate)** حسب المناطق الجغرافية.
-
-**النتائج الرئيسية:**
-- **المناطق الأعلى نسبة إلغاء:** [فرنسا].
-- **التوصية:** تركيز حملات استبقاء العملاء في المناطق ذات النسبة المرتفعة، وتحليل أسباب الإلغاء فيها.
-
-
-## 🛠️ الأدوات والتقنيات المستخدمة (Tools & Technologies)
-
-- **Power BI Desktop** - إنشاء النموذج والتصورات التفاعلية.
-- **DAX (Data Analysis Expressions)** - إنشاء المقاييس المخصصة لحساب نسب الإلغاء والنشاط.
-- **Power Query** - تنظيف البيانات وتحويلها (معالجة القيم المفقودة، توحيد التنسيقات).
-- **مصدر البيانات:** [CSV / Excel / SQL] يحتوي على بيانات العملاء والحسابات والمعاملات.
-
-
-## 📁 هيكل المشروع (Project Structure)
-
-| الملف/المجلد | الشرح |
-| :--- | :--- |
-| `Bank.pbix` | ملف Power BI الرئيسي |
-
-| `images/` | لقطات شاشة للوحة التحكم |
-| `README.md` | هذا الملف التوضيحي |
+- Identify regions with high churn rates.
+- Understand the characteristics of customers likely to leave.
+- Develop customer retention strategies targeting the most at-risk segments.
 
 ---
 
-## 🚀 كيفية الاستخدام (How to Use)
+## 📊 Key Performance Indicators (KPIs)
 
-1.  قم بتحميل ملف `.pbix` من هذا المستودع.
-2.  افتح الملف باستخدام **Power BI Desktop** (الإصدار 2023 أو أحدث). 
-3.   استعرض لوحة التحكم وتفاعل مع **الفلاتر** (Filter) لتخصيص العرض حسب المنطقة، الجنس، أو الفئة العمرية.
+The top section of the dashboard displays the following metrics:
 
+| Metric | Value | Description |
+|---|---|---|
+| **Total Customers** | 10k | Total number of registered bank customers. |
+| **Active Accounts** | 5.2k | Customers with account activity in the last 3 months. |
+| **Inactive Accounts** | 4.8k | Customers with no transactions in the last 3 months. |
+| **Churned Accounts** | 2,037 | Customers who closed their accounts during the selected period. |
+| **Female Ratio** | 55% | Percentage of female customers. |
+| **Male Ratio** | 44% | Percentage of male customers. |
+| **Average Age** | 38.92 | Average age of customers. |
 
+> **Note:** The sum of Female (55%) and Male (44%) ratios is 99%. Please verify whether there is an additional category (e.g., "Unspecified") or a rounding difference.
 
-## ⚠️ ملاحظات مهمة (Important Notes)
+---
 
-- البيانات المستخدمة في هذا المشروع هي **بيانات تجريبية** لأغراض العرض فقط، ولا تحتوي على أي معلومات حقيقية للعملاء.
-- تم تصميم لوحة التحكم لتكون متوافقة مع شاشات العرض المكتبية.
-- يمكن إضافة المزيد من المقاييس والتصورات حسب احتياجات العمل.
+## 🗺️ Geographic Map: Churn Rate by Region
+
+This map displays the distribution of the **Churn Rate** across geographic regions.
+
+**Key Findings:**
+
+- **Highest churn region:** France.
+- **Recommendation:** Focus retention campaigns on high-churn regions and analyze the root causes of account closures there.
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Power BI Desktop** — Building the data model and interactive visualizations.
+- **DAX (Data Analysis Expressions)** — Creating custom measures for churn and activity rates.
+- **Power Query** — Data cleaning and transformation (handling missing values, standardizing formats).
+- **Data Source:** CSV / Excel / SQL containing customer, account, and transaction data.
+
+---
+
+## 📁 Project Structure
+
+| File / Folder | Description |
+|---|---|
+| `bank.pbix` | Main Power BI project file. |
+| `images/` | Screenshots of the dashboard. |
+| `README.md` | This documentation file. |
+
+---
+
+## 🚀 How to Use
+
+1. Download the `.pbix` file from this repository.
+2. Open the file using **Power BI Desktop** (version 2023 or later).
+3. Explore the dashboard and interact with the **filters** to customize the view by region, gender, or age group.
+
+---
+
+## ⚠️ Important Notes
+
+- The data used in this project is **sample data** for demonstration purposes only and does not contain any real customer information.
+- The dashboard is designed to be compatible with desktop displays.
+- Additional measures and visualizations can be added as needed.
